@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqsf3rokrt2xe"]
+
+[ext_resource type="Script" uid="uid://dvjcqsud8gx8i" path="res://main_scenes/tile.gd" id="1_0wjpv"]
+
+[node name="tile" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_0wjpv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
