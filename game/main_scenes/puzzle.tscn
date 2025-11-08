@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv3lq5t4igbwx"]
+[gd_scene load_steps=3 format=3 uid="uid://cv3lq5t4igbwx"]
 
 [ext_resource type="Script" uid="uid://dyq64lmdoyqy1" path="res://main_scenes/puzzle.gd" id="1_751xq"]
+[ext_resource type="Texture2D" uid="uid://dx5i5k1c7r3a8" path="res://assets/puzzle_assets/puzzle_tiles_1/full_image.jpg" id="2_kcof2"]
 
 [node name="Puzzle" type="Control"]
 layout_mode = 3
@@ -25,3 +26,29 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
+
+[node name="FullImage" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -192.0
+offset_right = 192.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kcof2")
+
+[node name="SolveButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 732.0
+offset_top = 90.0
+offset_right = 834.0
+offset_bottom = 121.0
+text = "Solve Puzzle"
+
+[connection signal="pressed" from="SolveButton" to="." method="_on_solve_button_pressed"]

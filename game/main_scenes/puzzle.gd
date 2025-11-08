@@ -6,7 +6,9 @@ const EMPTY_TILE := -1
 const TILE_PATH := "res://assets/puzzle_assets/puzzle_tiles_1/tile_%d.jpg"
 const SHUFFLE_MOVES := 100
 
+@onready var full_image: TextureRect = $FullImage
 @onready var grid: GridContainer = $Grid
+
 var tiles: Array = []        # tile nodes by tile_id (0..7)
 var puzzle_state: Array = [] # length 9, contains tile_id or -1
 
@@ -117,6 +119,29 @@ func _is_solved() -> bool:
 			return false
 	return puzzle_state[GRID_SIZE * GRID_SIZE - 1] == EMPTY_TILE
 
+func _reveal_full_image():
+	full_image.visible = true
+	full_image.modulate = Color(1, 1, 1, 0)
+	grid.modulate = Color(1, 1, 1, 1) # reset grid alpha
+
+	var tween := create_tween()
+	tween.parallel().tween_property(full_image, "modulate:a", 1.0, 1.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	tween.parallel().tween_property(grid, "modulate:a", 0.0, 1.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	tween.tween_callback(Callable(self, "_play_full_image_animation"))
+
 func _on_puzzle_solved():
-	# replace with your UI or popup when solved
 	print("Puzzle Complete!")
+	_reveal_full_image()
+
+
+func _on_solve_button_pressed() -> void:
+	print("Solving puzzle instantly for testing...")
+	puzzle_state.clear()
+
+	# Fill puzzle_state in correct order
+	for i in range(GRID_SIZE * GRID_SIZE - 1):
+		puzzle_state.append(i)
+	puzzle_state.append(EMPTY_TILE)  # last slot empty
+
+	_update_grid()
+	_on_puzzle_solved()  # directly trigger reveal
