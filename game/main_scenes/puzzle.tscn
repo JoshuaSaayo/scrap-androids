@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cv3lq5t4igbwx"]
 
 [ext_resource type="Script" uid="uid://dyq64lmdoyqy1" path="res://main_scenes/puzzle.gd" id="1_751xq"]
-[ext_resource type="Texture2D" uid="uid://dx5i5k1c7r3a8" path="res://assets/puzzle_assets/puzzle_tiles_1/full_image.jpg" id="2_kcof2"]
+[ext_resource type="Texture2D" uid="uid://c7urntm1vvvbn" path="res://assets/puzzle_assets/puzzle_tiles_1/full_image.jpg" id="2_kcof2"]
 
 [node name="Puzzle" type="Control"]
 layout_mode = 3
@@ -46,9 +46,9 @@ texture = ExtResource("2_kcof2")
 [node name="SolveButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 732.0
-offset_top = 90.0
+offset_top = 38.0
 offset_right = 834.0
-offset_bottom = 121.0
+offset_bottom = 69.0
 text = "Solve Puzzle"
 
 [connection signal="pressed" from="SolveButton" to="." method="_on_solve_button_pressed"]

@@ -1,7 +1,7 @@
 extends Control
 
 const GRID_SIZE := 3
-const TILE_SIZE := 128
+const TILE_SIZE := 170
 const EMPTY_TILE := -1
 const TILE_PATH := "res://assets/puzzle_assets/puzzle_tiles_1/tile_%d.jpg"
 const SHUFFLE_MOVES := 100
