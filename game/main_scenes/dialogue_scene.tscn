@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://di1emr8sody11"]
+[gd_scene load_steps=11 format=3 uid="uid://di1emr8sody11"]
 
 [ext_resource type="Texture2D" uid="uid://c7eaealcfp3vq" path="res://assets/illust_dialogue/prologue_1.jpg" id="1_8rnwa"]
 [ext_resource type="Script" uid="uid://d1uk31bqkxyaq" path="res://main_scenes/dialogue_scene.gd" id="1_57nxx"]
+[ext_resource type="Texture2D" uid="uid://ialv3xrjscl1" path="res://assets/illust_dialogue/Intro_1.png" id="2_1pd18"]
+[ext_resource type="Texture2D" uid="uid://cl6t011xa7dnm" path="res://assets/illust_dialogue/Intro_2.jpg" id="3_wxm5q"]
 [ext_resource type="Texture2D" uid="uid://dfpvpvstp1wqv" path="res://assets/illust_dialogue/prologue_2.jpg" id="3_xcyb0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8rnwa"]
@@ -27,7 +29,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_57nxx")
-illusts = Array[Texture2D]([ExtResource("1_8rnwa"), ExtResource("3_xcyb0")])
+illusts = Array[Texture2D]([ExtResource("2_1pd18"), ExtResource("3_wxm5q"), ExtResource("1_8rnwa"), ExtResource("3_xcyb0")])
+illust_line_ranges = Array[int]([5, 6, 9, 16])
 
 [node name="Illust" type="TextureRect" parent="."]
 layout_mode = 0
