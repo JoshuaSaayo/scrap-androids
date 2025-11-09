@@ -1,0 +1,96 @@
+[gd_scene load_steps=9 format=3 uid="uid://di1emr8sody11"]
+
+[ext_resource type="Texture2D" uid="uid://c7eaealcfp3vq" path="res://assets/illust_dialogue/prologue_1.jpg" id="1_8rnwa"]
+[ext_resource type="Script" uid="uid://d1uk31bqkxyaq" path="res://main_scenes/dialogue_scene.gd" id="1_57nxx"]
+[ext_resource type="Texture2D" uid="uid://dfpvpvstp1wqv" path="res://assets/illust_dialogue/prologue_2.jpg" id="3_xcyb0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8rnwa"]
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_57nxx"]
+font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8rnwa"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcyb0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57nxx"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="dialogue_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_57nxx")
+illusts = Array[Texture2D]([ExtResource("1_8rnwa"), ExtResource("3_xcyb0")])
+
+[node name="Illust" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_8rnwa")
+
+[node name="DialogueBox" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -206.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.392157)
+
+[node name="CharacterName" type="Label" parent="DialogueBox"]
+layout_mode = 0
+offset_right = 49.0
+offset_bottom = 23.0
+text = "Player"
+label_settings = SubResource("LabelSettings_8rnwa")
+
+[node name="DialogueLabel" type="Label" parent="DialogueBox"]
+layout_mode = 0
+offset_top = 74.0
+offset_right = 1132.0
+offset_bottom = 195.0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed vitae neque non risus interdum dignissim. 
+Nulla facilisi. Praesent accumsan, magna a porttitor congue, nisi lacus viverra magna, ut laoreet turpis elit vitae nibh. 
+wMauris vitae sapien justo."
+label_settings = SubResource("LabelSettings_57nxx")
+
+[node name="NextButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 0)
+theme_override_styles/hover = SubResource("StyleBoxFlat_8rnwa")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xcyb0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_57nxx")
+text = "
+"
+
+[node name="SkipButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -41.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Skip"
+
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]

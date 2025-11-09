@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LEWD PUZZLE"
-run/main_scene="uid://cv3lq5t4igbwx"
+run/main_scene="uid://ba5t7lvxnwn1j"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
