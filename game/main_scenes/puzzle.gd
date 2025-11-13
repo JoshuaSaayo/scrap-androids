@@ -2,15 +2,17 @@ extends Control
 
 const GRID_SIZE := 3
 const TILE_SIZE := 170
-const EMPTY_TILE := -1
+const EMPTY_TILE := -3
 const TILE_PATH := "res://assets/puzzle_assets/puzzle_tiles_1/tile_%d.jpg"
 const SHUFFLE_MOVES := 100
 
-@onready var full_image: TextureRect = $FullImage
+@onready var FullImageClear: TextureRect = $FullImageClear
 @onready var grid: GridContainer = $Grid
+@onready var FullImageBlur: TextureRect = $FullImageBlur
 
-var tiles: Array = []        # tile nodes by tile_id (0..7)
-var puzzle_state: Array = [] # length 9, contains tile_id or -1
+
+var tiles: Array = []        # tile nodes by tile_id (0..8)
+var puzzle_state: Array = [] # length 9, contains tile_id or EMPTY_TILE
 
 func _ready():
 	_create_tiles()
@@ -21,7 +23,8 @@ func _ready():
 func _create_tiles():
 	tiles.clear()
 	puzzle_state.clear()
-	# create 8 tile Button nodes (tile ids 0..7)
+	
+	# Create GRID_SIZE * GRID_SIZE - 1 tile Button nodes (tile ids 0..7 for 3x3 grid)
 	for tile_id in range(GRID_SIZE * GRID_SIZE - 1):
 		var btn := Button.new()
 		btn.custom_minimum_size = Vector2(TILE_SIZE, TILE_SIZE)
@@ -52,26 +55,23 @@ func _shuffle_tiles():
 
 # Update GridContainer children to match puzzle_state order
 func _update_grid():
-	# Remove only placeholder Controls, not Buttons
+	# Remove all children from grid
 	for child in grid.get_children():
-		if child is Control and not (child is Button):
+		grid.remove_child(child)
+		if not (child in tiles):
 			child.queue_free()
-		elif child is Button:
-			# Detach existing tiles safely without deleting them
-			if child.get_parent() == grid:
-				grid.remove_child(child)
 
 	# Recreate grid layout based on puzzle_state
 	for pos in range(GRID_SIZE * GRID_SIZE):
-		var t: int = puzzle_state[pos]
-		if t == EMPTY_TILE:
+		var tile_id: int = puzzle_state[pos]
+		if tile_id == EMPTY_TILE:
+			# Create empty placeholder
 			var placeholder := Control.new()
 			placeholder.custom_minimum_size = Vector2(TILE_SIZE, TILE_SIZE)
 			grid.add_child(placeholder)
 		else:
-			var tile: Button = tiles[t]
-			if tile.get_parent() != null and tile.get_parent() != grid:
-				tile.get_parent().remove_child(tile)
+			# Add the actual tile button
+			var tile: Button = tiles[tile_id]
 			grid.add_child(tile)
 
 # When a tile (tile_id) is pressed
@@ -120,14 +120,24 @@ func _is_solved() -> bool:
 	return puzzle_state[GRID_SIZE * GRID_SIZE - 1] == EMPTY_TILE
 
 func _reveal_full_image():
-	full_image.visible = true
-	full_image.modulate = Color(1, 1, 1, 0)
-	grid.modulate = Color(1, 1, 1, 1) # reset grid alpha
+	FullImageClear.visible = true
+	FullImageBlur.visible = true
+
+	FullImageBlur.modulate = Color(1,1,1,1)
+	grid.modulate = Color(1,1,1,1)
 
 	var tween := create_tween()
-	tween.parallel().tween_property(full_image, "modulate:a", 1.0, 1.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	tween.parallel().tween_property(grid, "modulate:a", 0.0, 1.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	tween.tween_callback(Callable(self, "_play_full_image_animation"))
+
+	# fade out puzzle grid
+	tween.parallel().tween_property(grid, "modulate:a", 0.0, 1.0)
+
+	# fade out blurred overlay
+	tween.parallel().tween_property(FullImageBlur, "modulate:a", 0.0, 1.0)
+
+	# optional: callback after reveal
+	tween.tween_callback(func():
+		print("Full clear image revealed!")
+	)
 
 func _on_puzzle_solved():
 	print("Puzzle Complete!")

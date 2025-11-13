@@ -50,6 +50,7 @@ func _update_dialogue():
 	dialogue_label.text = line["text"]
 	character_name.text = line["name"]
 
+
 func _update_illust():
 	var index = 0
 	for i in range(illust_line_ranges.size()):

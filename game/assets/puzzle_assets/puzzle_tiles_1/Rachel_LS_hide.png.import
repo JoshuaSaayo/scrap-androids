@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x0whcpft6u2j"
-path="res://.godot/imported/Rachel_LS.png-405226129ddce0290f0974b05f503129.ctex"
+uid="uid://cfbiug3xc8d20"
+path="res://.godot/imported/Rachel_LS_hide.png-c34e8466aaa2f7b48b0b11407898eeb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/puzzle_assets/puzzle_tiles_1/Rachel_LS.png"
-dest_files=["res://.godot/imported/Rachel_LS.png-405226129ddce0290f0974b05f503129.ctex"]
+source_file="res://assets/puzzle_assets/puzzle_tiles_1/Rachel_LS_hide.png"
+dest_files=["res://.godot/imported/Rachel_LS_hide.png-c34e8466aaa2f7b48b0b11407898eeb7.ctex"]
 
 [params]
 
