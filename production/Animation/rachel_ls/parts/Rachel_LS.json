@@ -1,0 +1,117 @@
+{ "skeleton": { "images": "C:/Users/Joshua PC/OneDrive/Desktop/parts/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root", "attachment": "BG" },
+	{ "name": "Layer35", "bone": "root", "attachment": "Layer35" },
+	{ "name": "back_hair", "bone": "root", "attachment": "back_hair" },
+	{ "name": "torso", "bone": "root", "attachment": "torso" },
+	{ "name": "l_boob", "bone": "root", "attachment": "l_boob" },
+	{ "name": "r_boob", "bone": "root", "attachment": "r_boob" },
+	{ "name": "r_shoulder", "bone": "root", "attachment": "r_shoulder" },
+	{ "name": "clothes", "bone": "root", "attachment": "clothes" },
+	{ "name": "l_thigh", "bone": "root", "attachment": "l_thigh" },
+	{ "name": "vagina_hole", "bone": "root", "attachment": "vagina_hole" },
+	{ "name": "l_vagina", "bone": "root", "attachment": "l_vagina" },
+	{ "name": "penis", "bone": "root", "attachment": "penis" },
+	{ "name": "r_thigh", "bone": "root", "attachment": "r_thigh" },
+	{ "name": "r_vagina", "bone": "root", "attachment": "r_vagina" },
+	{ "name": "l_sidehair", "bone": "root", "attachment": "l_sidehair" },
+	{ "name": "Layer30", "bone": "root", "attachment": "Layer30" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "mouth", "bone": "root", "attachment": "mouth" },
+	{ "name": "eyes", "bone": "root", "attachment": "eyes" },
+	{ "name": "r_ear", "bone": "root", "attachment": "r_ear" },
+	{ "name": "bows", "bone": "root", "attachment": "bows" },
+	{ "name": "bangs", "bone": "root", "attachment": "bangs" },
+	{ "name": "eyebrows", "bone": "root", "attachment": "eyebrows" },
+	{ "name": "l_ear", "bone": "root", "attachment": "l_ear" },
+	{ "name": "googles", "bone": "root", "attachment": "googles" },
+	{ "name": "m_body", "bone": "root", "attachment": "m_body" }
+],
+"skins": {
+	"default": {
+		"BG": {
+			"BG": { "x": 640, "y": -400, "width": 1282, "height": 802 }
+		},
+		"Layer35": {
+			"Layer35": { "x": 640, "y": -400, "width": 1282, "height": 802 }
+		},
+		"back_hair": {
+			"back_hair": { "x": 1005, "y": -391.5, "width": 552, "height": 785 }
+		},
+		"torso": {
+			"torso": { "x": 640, "y": -500, "width": 1282, "height": 602 }
+		},
+		"l_boob": {
+			"l_boob": { "x": 739.5, "y": -385.5, "width": 439, "height": 283 }
+		},
+		"r_boob": {
+			"r_boob": { "x": 918, "y": -483.5, "width": 442, "height": 431 }
+		},
+		"r_shoulder": {
+			"r_shoulder": { "x": 1127.5, "y": -616.5, "width": 307, "height": 369 }
+		},
+		"clothes": {
+			"clothes": { "x": 692, "y": -592.5, "width": 564, "height": 417 }
+		},
+		"l_thigh": {
+			"l_thigh": { "x": 373.5, "y": -400, "width": 749, "height": 802 }
+		},
+		"vagina_hole": {
+			"vagina_hole": { "x": 215, "y": -634, "width": 132, "height": 144 }
+		},
+		"l_vagina": {
+			"l_vagina": { "x": 276, "y": -579, "width": 554, "height": 444 }
+		},
+		"penis": {
+			"penis": { "x": 272, "y": -528.5, "width": 546, "height": 545 }
+		},
+		"r_thigh": {
+			"r_thigh": { "x": 504.5, "y": -638, "width": 1011, "height": 326 }
+		},
+		"r_vagina": {
+			"r_vagina": { "x": 328, "y": -672, "width": 390, "height": 258 }
+		},
+		"l_sidehair": {
+			"l_sidehair": { "x": 911.5, "y": -338.5, "width": 143, "height": 189 }
+		},
+		"Layer30": {
+			"Layer30": { "x": 1106, "y": -391, "width": 272, "height": 252 }
+		},
+		"head": {
+			"head": { "x": 1057, "y": -189.5, "width": 378, "height": 365 }
+		},
+		"mouth": {
+			"mouth": { "x": 1040.5, "y": -313, "width": 71, "height": 48 }
+		},
+		"eyes": {
+			"eyes": { "x": 1053.5, "y": -221, "width": 257, "height": 100 }
+		},
+		"r_ear": {
+			"r_ear": { "x": 1254, "y": -90, "width": 54, "height": 82 }
+		},
+		"bows": {
+			"bows": { "x": 1118.5, "y": -51, "width": 323, "height": 104 }
+		},
+		"bangs": {
+			"bangs": { "x": 1078.5, "y": -184.5, "width": 401, "height": 371 }
+		},
+		"eyebrows": {
+			"eyebrows": { "x": 1068.5, "y": -148.5, "width": 261, "height": 63 }
+		},
+		"l_ear": {
+			"l_ear": { "x": 948, "y": -35, "width": 94, "height": 72 }
+		},
+		"googles": {
+			"googles": { "x": 854, "y": -104, "width": 854, "height": 210 }
+		},
+		"m_body": {
+			"m_body": { "x": 457.5, "y": -400, "width": 917, "height": 802 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

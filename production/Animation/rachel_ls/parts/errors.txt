@@ -1,0 +1,9 @@
+Multiple layers for the "default" skin in the "Layer10" slot have the same name "Layer10":
+ref/Layer10
+ref/Layer10
+Rename or use the [ignore] tag for these layers.
+---
+Multiple layers for the "default" skin in the "Layer35" slot have the same name "Layer35":
+Layer35
+ref/Layer35
+Rename or use the [ignore] tag for these layers.
