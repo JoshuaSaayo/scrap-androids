@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bv0gtums2j7of"
-path="res://.godot/imported/EnchantedLand-jnX9.ttf-3676b1a3410136fe519245ff861403dc.fontdata"
+uid="uid://uhr8qhx5k2x7"
+path="res://.godot/imported/UncialAntiqua-Regular.ttf-403727a3491821e47d5999c43aa211e3.fontdata"
 
 [deps]
 
-source_file="res://UI/Fonts/EnchantedLand-jnX9.ttf"
-dest_files=["res://.godot/imported/EnchantedLand-jnX9.ttf-3676b1a3410136fe519245ff861403dc.fontdata"]
+source_file="res://UI/Fonts/UncialAntiqua-Regular.ttf"
+dest_files=["res://.godot/imported/UncialAntiqua-Regular.ttf-403727a3491821e47d5999c43aa211e3.fontdata"]
 
 [params]
 

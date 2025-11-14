@@ -27,8 +27,8 @@ var dialogues = [
 	{"name": "Player", "text": "Is she… Masturbating?"},
 	{"name": "Girl in the tree", "text": " hmm? Hey you! I know you saw me here! I want you to come here."},
 	{"name": "Player", "text": "Ehh.. What do you want, miss?"},
-	{"name": "Girl in the tree:", "text": "aahh finally! The Voyager is here, I am bored doing only fingering my pussy."},
-	{"name": "Rachel", "text": "Come here and call me Rachel and please my pussy is itchy, I need your cock~"},
+	{"name": "Girl in the tree:", "text": "Aahh finally! The Voyager is here, I am bored doing only fingering my pussy."},
+	{"name": "Rachel", "text": "Come here and call me Rachel and please, my pussy is itchy. I need your cock~"},
 ]
 
 var current_line := 0

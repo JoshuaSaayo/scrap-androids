@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://di1emr8sody11"]
+[gd_scene load_steps=18 format=3 uid="uid://di1emr8sody11"]
 
 [ext_resource type="Texture2D" uid="uid://c7eaealcfp3vq" path="res://assets/illust_dialogue/prologue_1.jpg" id="1_8rnwa"]
 [ext_resource type="Script" uid="uid://d1uk31bqkxyaq" path="res://main_scenes/dialogue_scene.gd" id="1_57nxx"]
@@ -6,16 +6,42 @@
 [ext_resource type="Texture2D" uid="uid://cl6t011xa7dnm" path="res://assets/illust_dialogue/Intro_2.jpg" id="3_wxm5q"]
 [ext_resource type="Texture2D" uid="uid://o61x3v34uo82" path="res://assets/illust_dialogue/intro_3.png" id="4_wxm5q"]
 [ext_resource type="Texture2D" uid="uid://ds6dlmro55lr6" path="res://assets/illust_dialogue/intro_4.png" id="5_78psj"]
-[ext_resource type="FontFile" uid="uid://bv0gtums2j7of" path="res://UI/Fonts/EnchantedLand-jnX9.ttf" id="7_nwqrh"]
-[ext_resource type="FontFile" uid="uid://c4x5l1b5sevir" path="res://UI/Fonts/Magicalhorisonregular-aYDeR.otf" id="8_jjc2r"]
+[ext_resource type="FontFile" uid="uid://uhr8qhx5k2x7" path="res://UI/Fonts/UncialAntiqua-Regular.ttf" id="7_nwqrh"]
+[ext_resource type="FontFile" uid="uid://dkm2355qngj5i" path="res://UI/Fonts/Texturina-VariableFont_opsz,wght.ttf" id="8_jjc2r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwqrh"]
+bg_color = Color(0, 0, 0, 0.392157)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="LabelSettings" id="LabelSettings_8rnwa"]
 font = ExtResource("7_nwqrh")
-font_size = 50
+font_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jjc2r"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mjqjo"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75v2s"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_57nxx"]
 font = ExtResource("8_jjc2r")
-font_size = 20
+font_size = 18
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8rnwa"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -53,38 +79,22 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="DialogueBox" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="DialogueBox" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 42.0
-offset_top = -206.0
-offset_right = -38.0
-grow_horizontal = 2
-grow_vertical = 0
-color = Color(0, 0, 0, 0.392157)
+offset_top = 514.0
+offset_right = 1242.0
+offset_bottom = 714.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nwqrh")
 
 [node name="CharacterName" type="Label" parent="DialogueBox"]
 layout_mode = 0
 offset_left = 30.0
+offset_top = 9.0
 offset_right = 127.0
-offset_bottom = 59.0
+offset_bottom = 68.0
 text = "Player"
 label_settings = SubResource("LabelSettings_8rnwa")
-
-[node name="DialogueLabel" type="Label" parent="DialogueBox"]
-layout_mode = 0
-offset_left = 30.0
-offset_top = 74.0
-offset_right = 1162.0
-offset_bottom = 195.0
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Sed vitae neque non risus interdum dignissim. 
-Nulla facilisi. Praesent accumsan, magna a porttitor congue, nisi lacus viverra magna, ut laoreet turpis elit vitae nibh. 
-wMauris vitae sapien justo."
-label_settings = SubResource("LabelSettings_57nxx")
 
 [node name="SkipButton" type="Button" parent="DialogueBox"]
 layout_mode = 1
@@ -93,13 +103,32 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -90.0
-offset_top = -41.0
+offset_left = -115.0
+offset_top = -42.0
 offset_right = -49.0
-offset_bottom = -10.0
+offset_bottom = -11.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_nwqrh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jjc2r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mjqjo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_75v2s")
 text = "Skip"
+
+[node name="DialogueLabel" type="Label" parent="DialogueBox"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 55.0
+offset_right = 1162.0
+offset_bottom = 192.0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed vitae neque non risus interdum dignissim. 
+Nulla facilisi. Praesent accumsan, magna a porttitor congue, nisi lacus viverra magna, ut laoreet turpis elit vitae nibh. 
+wMauris vitae sapien justo."
+label_settings = SubResource("LabelSettings_57nxx")
 
 [node name="NextButton" type="Button" parent="."]
 layout_mode = 1
