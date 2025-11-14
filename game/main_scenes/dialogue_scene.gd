@@ -4,6 +4,7 @@ extends Control
 @onready var dialogue_label = $DialogueBox/DialogueLabel
 @onready var character_name: Label = $DialogueBox/CharacterName
 @onready var next_button = $NextButton
+@onready var fade_rect: ColorRect = $FadeRect
 
 # --- Exported variables for easy editing in inspector
 @export var illusts: Array[Texture2D] = []
@@ -27,7 +28,7 @@ var dialogues = [
 	{"name": "Girl in the tree", "text": " hmm? Hey you! I know you saw me here! I want you to come here."},
 	{"name": "Player", "text": "Ehh.. What do you want, miss?"},
 	{"name": "Girl in the tree:", "text": "aahh finally! The Voyager is here, I am bored doing only fingering my pussy."},
-	{"name": "Rachel", "text": "Come here and call me Rachel and I want you to fuck me hard~"},
+	{"name": "Rachel", "text": "Come here and call me Rachel and please my pussy is itchy, I need your cock~"},
 ]
 
 var current_line := 0
@@ -50,14 +51,48 @@ func _update_dialogue():
 	dialogue_label.text = line["text"]
 	character_name.text = line["name"]
 
+func slide_illust(new_texture: Texture2D):
+	var start_pos = illust.position
+	var offscreen = start_pos + Vector2(-300, 0) # slide left
 
+	var tween := create_tween()
+
+	# slide old image out
+	tween.tween_property(illust, "position", offscreen, 0.3)
+
+	tween.tween_callback(func():
+		illust.texture = new_texture
+		illust.position = start_pos + Vector2(300, 0) # spawn right
+	)
+
+	# slide new image in
+	tween.tween_property(illust, "position", start_pos, 0.3)
+
+func fade_transition(new_texture: Texture2D, duration := 0.5) -> void:
+	var tween = create_tween()
+	
+	# Fade IN (cover screen)
+	tween.tween_property(fade_rect, "modulate:a", 1.0, duration/2)
+	await tween.finished
+	
+	# Change the image while screen is covered
+	illust.texture = new_texture
+	
+	# Fade OUT (reveal screen)
+	tween = create_tween()
+	tween.tween_property(fade_rect, "modulate:a", 0.0, duration/2)
+	await tween.finished
+	
 func _update_illust():
 	var index = 0
 	for i in range(illust_line_ranges.size()):
 		if current_line < illust_line_ranges[i]:
 			index = i
 			break
-	illust.texture = illusts[index]
+	
+	# Use fade transition instead of directly setting the texture
+	if illusts[index] != illust.texture:
+		fade_transition(illusts[index], 0.5)
 
 func _go_to_puzzle():
 	get_tree().change_scene_to_file(puzzle_scene)
