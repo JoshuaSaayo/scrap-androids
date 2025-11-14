@@ -9,6 +9,7 @@ const SHUFFLE_MOVES := 40               # fewer moves needed for 2x2
 @onready var FullImageClear: TextureRect = $FullImageClear
 @onready var grid: GridContainer = $Grid
 @onready var FullImageBlur: TextureRect = $FullImageBlur
+@onready var message: Label = $Message
 
 var tiles: Array = []        # tile nodes by tile_id (0..2)
 var puzzle_state: Array = [] # length 4, contains tile_id or EMPTY_TILE
@@ -146,7 +147,8 @@ func _reveal_full_image():
 
 	tween.parallel().tween_property(grid, "modulate:a", 0.0, 1.0)
 	tween.parallel().tween_property(FullImageBlur, "modulate:a", 0.0, 1.0)
-
+	tween.parallel().tween_property(message, "modulate:a", 0.0, 1.0)
+	
 	tween.tween_callback(func():
 		print("Full clear image revealed!")
 	)
