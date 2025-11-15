@@ -1,7 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://cv3lq5t4igbwx"]
+[gd_scene load_steps=15 format=3 uid="uid://cv3lq5t4igbwx"]
 
 [ext_resource type="Script" uid="uid://dyq64lmdoyqy1" path="res://main_scenes/puzzle.gd" id="1_751xq"]
-[ext_resource type="PackedScene" uid="uid://bx6cph6pbulyg" path="res://lewds/lewdscenes/rachel_ls.tscn" id="3_ae0lw"]
+[ext_resource type="Texture2D" uid="uid://beqis8diuymfp" path="res://assets/puzzle_assets/puzzle_tiles_1/full_image.png" id="2_ae0lw"]
 [ext_resource type="Texture2D" uid="uid://bl8lj7j580lye" path="res://assets/puzzle_assets/puzzle_tiles_1/Rachel_LS_blurred.png" id="3_v5n6s"]
 [ext_resource type="Texture2D" uid="uid://bhuililqa803s" path="res://UI/assets/spark.png" id="4_ae0lw"]
 [ext_resource type="FontFile" uid="uid://dkm2355qngj5i" path="res://UI/Fonts/Texturina-VariableFont_opsz,wght.ttf" id="4_esv5j"]
@@ -33,6 +33,23 @@ damping_max = 0.1
 scale_curve = SubResource("CurveTexture_hv2um")
 color_ramp = SubResource("GradientTexture1D_p2n2h")
 
+[sub_resource type="Gradient" id="Gradient_esv5j"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 0.654902, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ae0lw"]
+gradient = SubResource("Gradient_esv5j")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cyduf"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(512, 512, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+initial_velocity_min = 20.0
+initial_velocity_max = 40.0
+gravity = Vector3(0, 0, 0)
+scale_max = 3.0
+color_ramp = SubResource("GradientTexture1D_ae0lw")
+
 [sub_resource type="LabelSettings" id="LabelSettings_ae0lw"]
 font = ExtResource("4_esv5j")
 font_size = 30
@@ -48,13 +65,17 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_751xq")
 
+[node name="FullImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1281.0
+offset_bottom = 721.0
+texture = ExtResource("2_ae0lw")
+
 [node name="SweepRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("4_ae0lw")
-
-[node name="rachel_ls" parent="." instance=ExtResource("3_ae0lw")]
 
 [node name="FullImageBlur" type="TextureRect" parent="."]
 layout_mode = 0
@@ -70,6 +91,13 @@ lifetime = 1.2
 preprocess = 2.0
 randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_w74c4")
+
+[node name="SweepTrails" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 100
+texture = ExtResource("4_ae0lw")
+lifetime = 0.6
+process_material = SubResource("ParticleProcessMaterial_cyduf")
 
 [node name="Grid" type="GridContainer" parent="."]
 layout_mode = 1

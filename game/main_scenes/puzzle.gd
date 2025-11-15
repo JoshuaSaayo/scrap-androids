@@ -12,6 +12,7 @@ const ANIMATION_SCENE := "res://lewds/lewdscenes/rachel_ls.tscn"
 @onready var message: Label = $Message
 @onready var sweep_rect: TextureRect = $SweepRect
 @onready var sparkles: GPUParticles2D = $BackgroundSparkles
+@onready var sweep_trail: GPUParticles2D = $SweepTrails
 
 var tiles: Array = []
 var puzzle_state: Array = []
@@ -115,31 +116,63 @@ func _is_solved() -> bool:
 
 
 func _on_puzzle_solved():
-	grid.visible = false
-	message.visible = false
+	# Play sparkles behind grid
 	sparkles.emitting = true
-	_start_sweep_reveal()
+	
+	# Fade out grid
+	var tween := create_tween()
+	tween.tween_property(grid, "modulate:a", 0.0, 0.6)
+	tween.tween_property(message, "modulate:a", 1.0, 0.6) # Show message
+	tween.set_trans(Tween.TRANS_SINE)
+	tween.set_ease(Tween.EASE_OUT)
+	
+	tween.finished.connect(func():
+		grid.visible = false
+		_start_sweep_reveal()
+	)
 
 
 func _start_sweep_reveal():
+	full_image_blur.visible = true
 	sweep_rect.visible = true
 	sweep_rect.size.x = 0
 	sweep_rect.modulate.a = 1.0
-	full_image_blur.visible = true
+
+	# Enable fairy dust
+	sweep_trail.emitting = true
+
+	var total_width := full_image_blur.size.x
 
 	var tween := create_tween()
-	tween.tween_property(sweep_rect, "size:x", full_image_blur.size.x, 0.8)
+
+	# Sweep animation
+	tween.tween_property(sweep_rect, "size:x", total_width, 1.0)
+	
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_OUT)
+
+	# Move fairy dust along the sweep edge
+	tween.parallel().tween_method(
+		func(value):
+			sweep_trail.position.x = sweep_rect.position.x + value
+	, 0.0, total_width, 1.0)
+
 	tween.finished.connect(_finish_sweep)
 
 
 func _finish_sweep():
-	full_image_blur.visible = false
-	sweep_rect.visible = false
+	# Stop effects
+	sweep_trail.emitting = false
 	sparkles.emitting = false
-	
-	get_tree().create_timer(0.5).timeout.connect(_go_to_animation_scene)
+
+	# Smooth fade out blur and message
+	var fade_tween := create_tween()
+	fade_tween.tween_property(full_image_blur, "modulate:a", 0.0, 0.6)
+	fade_tween.tween_property(message, "modulate:a", 0.0, 0.6)
+	fade_tween.set_trans(Tween.TRANS_SINE)
+	fade_tween.set_ease(Tween.EASE_OUT)
+
+	fade_tween.finished.connect(_go_to_animation_scene)
 
 
 func _on_solve_button_pressed() -> void:
