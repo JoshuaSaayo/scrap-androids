@@ -64,6 +64,14 @@ script = ExtResource("1_57nxx")
 illusts = Array[Texture2D]([ExtResource("2_1pd18"), ExtResource("3_wxm5q"), ExtResource("4_wxm5q"), ExtResource("5_78psj")])
 illust_line_ranges = Array[int]([5, 6, 9, 16])
 
+[node name="TransitionRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Illust" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1280.0

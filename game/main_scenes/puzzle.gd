@@ -13,6 +13,7 @@ const SHUFFLE_MOVES := 40
 @onready var sweep_trail: GPUParticles2D = $SweepTrails
 @onready var slide_sparks: GPUParticles2D = $SlideSparks
 @onready var animation_container: Node2D = $rachel_ls
+@onready var transition_rect: ColorRect = $TransitionRect
 
 var tiles: Array = []
 var puzzle_state: Array = []
@@ -22,6 +23,15 @@ var animation_player: AnimationPlayer
 
 
 func _ready():
+	
+	if transition_rect:
+		transition_rect.modulate.a = 1.0  # Start fully white
+		var tween = create_tween()
+		tween.tween_property(transition_rect, "modulate:a", 0.0, 1.0)
+		tween.tween_callback(func():
+			transition_rect.visible = false
+		)
+			
 	_create_tiles()
 	_shuffle_tiles()
 	_update_grid()

@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cv3lq5t4igbwx"]
+[gd_scene load_steps=17 format=3 uid="uid://cv3lq5t4igbwx"]
 
 [ext_resource type="Script" uid="uid://dyq64lmdoyqy1" path="res://main_scenes/puzzle.gd" id="1_751xq"]
+[ext_resource type="Texture2D" uid="uid://beqis8diuymfp" path="res://assets/puzzle_assets/puzzle_tiles_1/full_image.png" id="2_ae0lw"]
 [ext_resource type="PackedScene" uid="uid://bx6cph6pbulyg" path="res://lewds/lewdscenes/rachel_ls.tscn" id="3_cyduf"]
 [ext_resource type="Texture2D" uid="uid://bl8lj7j580lye" path="res://assets/puzzle_assets/puzzle_tiles_1/Rachel_LS_blurred.png" id="3_v5n6s"]
 [ext_resource type="Texture2D" uid="uid://bhuililqa803s" path="res://UI/assets/spark.png" id="4_ae0lw"]
@@ -72,13 +73,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_751xq")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="FullImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ae0lw")
 
 [node name="SweepRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -138,5 +137,13 @@ offset_top = 18.0
 offset_right = 1099.0
 offset_bottom = 49.0
 text = "Solve Puzzle"
+
+[node name="TransitionRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="pressed" from="SolveButton" to="." method="_on_solve_button_pressed"]

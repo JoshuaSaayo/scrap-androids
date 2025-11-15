@@ -5,6 +5,7 @@ extends Control
 @onready var character_name: Label = $DialogueBox/CharacterName
 @onready var next_button = $NextButton
 @onready var fade_rect: ColorRect = $FadeRect
+@onready var transition_rect: ColorRect = $TransitionRect
 
 # --- Exported variables for easy editing in inspector
 @export var illusts: Array[Texture2D] = []
@@ -41,6 +42,9 @@ func _ready():
 	next_button.pressed.connect(_on_next_pressed)
 	_update_dialogue()
 	_update_illust()
+	
+	# Ensure white fade rect starts invisible
+	transition_rect.modulate.a = 0.0
 
 func _on_next_pressed():
 	if is_typing:
@@ -52,7 +56,7 @@ func _on_next_pressed():
 			_update_dialogue()
 			_update_illust()
 		else:
-			_go_to_puzzle()
+			_on_dialogue_finished()
 
 func _update_dialogue():
 	var line = dialogues[current_line]
@@ -73,7 +77,6 @@ func _start_typewriter_effect():
 		typewriter_tween.kill()
 	
 	typewriter_tween = create_tween()
-	var visible_characters := 0
 	
 	# Animate the text character by character
 	typewriter_tween.tween_method(_set_visible_characters, 0, current_text.length(), text_speed * current_text.length())
@@ -136,5 +139,17 @@ func _update_illust():
 	if illusts[index] != illust.texture:
 		fade_transition(illusts[index], 0.5)
 
-func _go_to_puzzle():
-	get_tree().change_scene_to_file(puzzle_scene)
+func _on_dialogue_finished():
+	print("Starting white fade transition using scene WhiteFadeRect")
+	
+	# Ensure the white fade rect is visible and on top
+	transition_rect.visible = true
+	transition_rect.z_index = 100
+	
+	# Fade in white smoothly
+	var tween = create_tween()
+	tween.tween_property(transition_rect, "modulate:a", 1.0, 1.0)
+	tween.tween_callback(func():
+		print("White fade complete, changing to puzzle scene")
+		get_tree().change_scene_to_file(puzzle_scene)
+	)
