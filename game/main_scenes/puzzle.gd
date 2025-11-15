@@ -7,9 +7,11 @@ const TILE_PATH := "res://assets/puzzle_assets/puzzle_tiles_1/tile_%d.jpg"
 const SHUFFLE_MOVES := 40
 
 @onready var grid: GridContainer = $Grid
-@onready var full_image_clear: TextureRect = $FullImageClear
 @onready var full_image_blur: TextureRect = $FullImageBlur
 @onready var message: Label = $Message
+@onready var sweep_rect: TextureRect = $SweepRect
+@onready var sparkles: GPUParticles2D = $BackgroundSparkles
+
 
 var tiles: Array = []
 var puzzle_state: Array = []
@@ -114,13 +116,44 @@ func _is_solved() -> bool:
 			return false
 	return puzzle_state[GRID_SIZE * GRID_SIZE - 1] == EMPTY_TILE
 
+func _finish_sweep():
+	full_image_blur.visible = false  # blur gone
+	sweep_rect.visible = false       # hide sweep bar
 
+	# Stop the background sparkles after reveal
+	sparkles.emitting = false
+
+	# Small delay then move to animation scene
+	get_tree().create_timer(0.5).timeout.connect(_go_to_animation_scene)
+	
+func _start_sweep_reveal():
+	# Start with SweepRect collapsed
+	sweep_rect.visible = true
+	sweep_rect.size.x = 0
+	sweep_rect.modulate.a = 1.0              # fully visible white bar
+
+	full_image_blur.visible = true
+
+	# Tween: expand SweepRect left→right
+	var tween := create_tween()
+	tween.tween_property(
+		sweep_rect, "size:x",
+		full_image_blur.size.x,
+		0.8
+	).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+
+	# After sweep finishes
+	tween.finished.connect(_finish_sweep)
+	
 func _on_puzzle_solved():
-	_reveal_full_image()
+	grid.visible = false                      # hide puzzle tiles
+	message.visible = false
+
+	sparkles.emitting = true                  # background sparkles ON
+	_start_sweep_reveal()                     # begin sweep wipe
 
 
 func _reveal_full_image():
-	full_image_clear.visible = true
 	full_image_blur.visible = true
 
 	var tween := create_tween()
@@ -140,3 +173,6 @@ func _on_solve_button_pressed() -> void:
 
 	_update_grid()
 	_on_puzzle_solved()
+
+func _go_to_animation_scene():
+	get_tree().change_scene_to_file("res://lewds/lewdscenes/rachel_ls.tscn")

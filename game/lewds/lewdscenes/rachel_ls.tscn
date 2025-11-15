@@ -1,0 +1,949 @@
+[gd_scene load_steps=184 format=3 uid="uid://bx6cph6pbulyg"]
+
+[ext_resource type="Texture2D" uid="uid://c8uu1ur2sr80y" path="res://lewds/lewd_assets/rachel_ls/parts/Layer35.png" id="1_8b2ba"]
+[ext_resource type="Texture2D" uid="uid://btqd38csf003w" path="res://lewds/lewd_assets/rachel_ls/parts/torso.png" id="2_cmmlg"]
+[ext_resource type="Texture2D" uid="uid://c8y1cu8r8dvn5" path="res://lewds/lewd_assets/rachel_ls/parts/head.png" id="3_n3oe8"]
+[ext_resource type="Texture2D" uid="uid://bq5isu50pxvki" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_00.png" id="3_x1vu7"]
+[ext_resource type="Texture2D" uid="uid://bqiw54hsk2v0y" path="res://lewds/lewd_assets/rachel_ls/parts/eyes.png" id="5_ey3wb"]
+[ext_resource type="Texture2D" uid="uid://cq6fhl2n8uqs1" path="res://lewds/lewd_assets/rachel_ls/parts/mouth.png" id="6_j13b7"]
+[ext_resource type="Texture2D" uid="uid://0pfuub3thc80" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_00.png" id="8_mtn7i"]
+[ext_resource type="Texture2D" uid="uid://ckch5b1aoirru" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_00.png" id="11_8b2ba"]
+[ext_resource type="Texture2D" uid="uid://fiidxqfwb4l1" path="res://lewds/lewd_assets/rachel_ls/parts/template.png" id="11_hky53"]
+[ext_resource type="Texture2D" uid="uid://13mqe2yhpjsm" path="res://lewds/lewd_assets/rachel_ls/parts/bows.png" id="13_8ik2m"]
+[ext_resource type="Texture2D" uid="uid://cliwblcmuvs7v" path="res://lewds/lewd_assets/rachel_ls/parts/clothes.png" id="14_pv466"]
+[ext_resource type="Texture2D" uid="uid://d23dev434e5bw" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_00.png" id="16_cmmlg"]
+[ext_resource type="Texture2D" uid="uid://d5upobyy5e8f" path="res://lewds/lewd_assets/rachel_ls/parts/c_eyes.png" id="16_q7e01"]
+[ext_resource type="Texture2D" uid="uid://cco6kpbkqu1hn" path="res://lewds/lewd_assets/rachel_ls/parts/eyebrows.png" id="17_iegjl"]
+[ext_resource type="Texture2D" uid="uid://cf0rembqvu1dy" path="res://lewds/lewd_assets/rachel_ls/parts/googles.png" id="18_owcbj"]
+[ext_resource type="Texture2D" uid="uid://ciicq2a4oyox1" path="res://lewds/lewd_assets/rachel_ls/parts/l_ear.png" id="19_3b37o"]
+[ext_resource type="Texture2D" uid="uid://dsow66khiw28b" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_00.png" id="19_n3oe8"]
+[ext_resource type="Texture2D" uid="uid://c3ffa4c814o4g" path="res://lewds/lewd_assets/rachel_ls/parts/l_thigh.png" id="20_18qlf"]
+[ext_resource type="Texture2D" uid="uid://6dccusdj5wb0" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_00.png" id="21_ycf3n"]
+[ext_resource type="Texture2D" uid="uid://dxe0pvbsnso7e" path="res://lewds/lewd_assets/rachel_ls/parts/m_body.png" id="22_578t6"]
+[ext_resource type="Texture2D" uid="uid://bavhrn75n6ae1" path="res://lewds/lewd_assets/rachel_ls/parts/penis.png" id="23_3cue8"]
+[ext_resource type="Texture2D" uid="uid://di0m038ts6f1n" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_00.png" id="23_ey3wb"]
+[ext_resource type="Texture2D" uid="uid://eik6yayad5sh" path="res://lewds/lewd_assets/rachel_ls/parts/r_ear.png" id="24_6oui0"]
+[ext_resource type="Texture2D" uid="uid://cb3f7fb84mu60" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_00.png" id="24_j13b7"]
+[ext_resource type="Texture2D" uid="uid://ddwpi4oy5jms5" path="res://lewds/lewd_assets/rachel_ls/parts/r_shoulder.png" id="25_66lyp"]
+[ext_resource type="Texture2D" uid="uid://bw4xlle3jrrmo" path="res://lewds/lewd_assets/rachel_ls/parts/r_thigh.png" id="26_h1g4p"]
+[ext_resource type="Texture2D" uid="uid://dhve2q1hhrah2" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_01.png" id="26_qn8p7"]
+[ext_resource type="Texture2D" uid="uid://ncnqyng5xvk8" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_02.png" id="27_ru44a"]
+[ext_resource type="Texture2D" uid="uid://iqdm3dsjchai" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_03.png" id="28_7flnp"]
+[ext_resource type="Texture2D" uid="uid://do51wqkn564mp" path="res://lewds/lewd_assets/rachel_ls/parts/vagina_hole.png" id="28_fjfp3"]
+[ext_resource type="Texture2D" uid="uid://f2k3ujk05v6g" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_04.png" id="29_cpg6b"]
+[ext_resource type="Texture2D" uid="uid://k2i6dmyyw8ps" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_05.png" id="30_hid3i"]
+[ext_resource type="Texture2D" uid="uid://bubf3kc2vf21y" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_06.png" id="31_s6llt"]
+[ext_resource type="Texture2D" uid="uid://c0d76ddkk5jpb" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_07.png" id="32_cjgk7"]
+[ext_resource type="Texture2D" uid="uid://cqyy53npkld8j" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_08.png" id="33_nq0bq"]
+[ext_resource type="Texture2D" uid="uid://bvh5xtpcs31df" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_09.png" id="34_lu2e3"]
+[ext_resource type="Texture2D" uid="uid://ty1154c5p7vp" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_10.png" id="35_cv5wy"]
+[ext_resource type="Texture2D" uid="uid://jwvbviqj1mk" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_11.png" id="36_bttvf"]
+[ext_resource type="Texture2D" uid="uid://cm8wobcvul5yu" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_12.png" id="37_v3lej"]
+[ext_resource type="Texture2D" uid="uid://b8ut8np0f7enl" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_13.png" id="38_hqtwl"]
+[ext_resource type="Texture2D" uid="uid://mkau56ebgaip" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_14.png" id="39_lydtu"]
+[ext_resource type="Texture2D" uid="uid://hljmlupysl4j" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_15.png" id="40_aak2k"]
+[ext_resource type="Texture2D" uid="uid://cqngtp7kjwep0" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_16.png" id="41_pmgnj"]
+[ext_resource type="Texture2D" uid="uid://04cvlmwrro4t" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_17.png" id="42_w68wn"]
+[ext_resource type="Texture2D" uid="uid://3k34ep02gqnc" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_18.png" id="43_076m6"]
+[ext_resource type="Texture2D" uid="uid://mpg8s8qbmwan" path="res://lewds/lewd_assets/rachel_ls/boobs/boobs_19.png" id="44_hpvep"]
+[ext_resource type="Texture2D" uid="uid://cqm133mu0p1uf" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_01.png" id="45_geu8c"]
+[ext_resource type="Texture2D" uid="uid://bc4u282kovp50" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_02.png" id="46_nkocx"]
+[ext_resource type="Texture2D" uid="uid://cavquxu32ht2d" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_03.png" id="47_vlod4"]
+[ext_resource type="Texture2D" uid="uid://dkuov34to5elb" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_04.png" id="48_5j1w1"]
+[ext_resource type="Texture2D" uid="uid://dhn0e3e0oakcc" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_05.png" id="49_6sjti"]
+[ext_resource type="Texture2D" uid="uid://luorv6i5cmsu" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_06.png" id="50_dxlay"]
+[ext_resource type="Texture2D" uid="uid://biwjrf5q0kws4" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_07.png" id="51_egtmm"]
+[ext_resource type="Texture2D" uid="uid://bxalhx4oofpm7" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_08.png" id="52_sgxge"]
+[ext_resource type="Texture2D" uid="uid://c7yxvc8l2ukdd" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_09.png" id="53_c56dc"]
+[ext_resource type="Texture2D" uid="uid://c8nixd7agun5d" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_10.png" id="54_inp1r"]
+[ext_resource type="Texture2D" uid="uid://jsqxufkdr2o4" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_11.png" id="55_d5rd7"]
+[ext_resource type="Texture2D" uid="uid://dor61glay8fof" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_12.png" id="56_48ex1"]
+[ext_resource type="Texture2D" uid="uid://ceou54cx6xuyu" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_13.png" id="57_j5jef"]
+[ext_resource type="Texture2D" uid="uid://cs0cseshkm838" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_14.png" id="58_7xo0f"]
+[ext_resource type="Texture2D" uid="uid://ph637p1e3bbl" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_15.png" id="59_3ipou"]
+[ext_resource type="Texture2D" uid="uid://x2jvog371lti" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_16.png" id="60_o2hdh"]
+[ext_resource type="Texture2D" uid="uid://b4teacwj84fd5" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_17.png" id="61_lva81"]
+[ext_resource type="Texture2D" uid="uid://cpovomplcnx5u" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_18.png" id="62_lcbbe"]
+[ext_resource type="Texture2D" uid="uid://buvgdw05pposb" path="res://lewds/lewd_assets/rachel_ls/r_sidehair/r_sidehair_19.png" id="63_meycu"]
+[ext_resource type="Texture2D" uid="uid://datd5uqqy2b37" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_01.png" id="64_tmmtg"]
+[ext_resource type="Texture2D" uid="uid://ohe17yll2gct" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_02.png" id="65_mjndd"]
+[ext_resource type="Texture2D" uid="uid://rvtaks42t8r" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_03.png" id="66_11415"]
+[ext_resource type="Texture2D" uid="uid://d2t1uj7ni82p0" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_04.png" id="67_uxgfc"]
+[ext_resource type="Texture2D" uid="uid://cc58m1u5424br" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_05.png" id="68_tamup"]
+[ext_resource type="Texture2D" uid="uid://xt5lf0jw62h0" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_06.png" id="69_3a17f"]
+[ext_resource type="Texture2D" uid="uid://gb8k878ihvwd" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_07.png" id="70_o4n5j"]
+[ext_resource type="Texture2D" uid="uid://b05p3b2bkx0x1" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_08.png" id="71_8m1iu"]
+[ext_resource type="Texture2D" uid="uid://c3j5ib34lqv50" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_09.png" id="72_7a3nj"]
+[ext_resource type="Texture2D" uid="uid://de3mfrtaukni7" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_10.png" id="73_758wf"]
+[ext_resource type="Texture2D" uid="uid://djrltxtwrns58" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_11.png" id="74_6jkg4"]
+[ext_resource type="Texture2D" uid="uid://p7rpe8r8y3kc" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_12.png" id="75_ii5fl"]
+[ext_resource type="Texture2D" uid="uid://dcmwkfqr2u58r" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_13.png" id="76_4756g"]
+[ext_resource type="Texture2D" uid="uid://m3xei83cvtpe" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_14.png" id="77_sbn6g"]
+[ext_resource type="Texture2D" uid="uid://cd0dq10pgew1v" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_15.png" id="78_nw12g"]
+[ext_resource type="Texture2D" uid="uid://bk3a0pqlmvo2p" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_16.png" id="79_brp3o"]
+[ext_resource type="Texture2D" uid="uid://cifd5tetr653s" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_17.png" id="80_73ern"]
+[ext_resource type="Texture2D" uid="uid://cpantbks6glb8" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_18.png" id="81_buiry"]
+[ext_resource type="Texture2D" uid="uid://3m5ajkvf8eme" path="res://lewds/lewd_assets/rachel_ls/l_sidehair/l_sidehair_19.png" id="82_sivop"]
+[ext_resource type="Texture2D" uid="uid://bxsou1vruat5j" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_01.png" id="83_ep4ud"]
+[ext_resource type="Texture2D" uid="uid://cnxbhgeqb0r6w" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_02.png" id="84_xt0ck"]
+[ext_resource type="Texture2D" uid="uid://dtfj4f2gi5gxp" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_03.png" id="85_87h80"]
+[ext_resource type="Texture2D" uid="uid://c1m7rw5p8ub50" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_04.png" id="86_jw8rn"]
+[ext_resource type="Texture2D" uid="uid://dhayq4rrwsxir" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_05.png" id="87_j8ci0"]
+[ext_resource type="Texture2D" uid="uid://edtvvje37njb" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_06.png" id="88_dpm1k"]
+[ext_resource type="Texture2D" uid="uid://big5187o7mcup" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_07.png" id="89_mjg2d"]
+[ext_resource type="Texture2D" uid="uid://r5jc81b1u6ya" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_08.png" id="90_uin3q"]
+[ext_resource type="Texture2D" uid="uid://cde1b2byrb0hc" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_09.png" id="91_2d8ch"]
+[ext_resource type="Texture2D" uid="uid://dlda10v6o1non" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_10.png" id="92_sdh3e"]
+[ext_resource type="Texture2D" uid="uid://gh68vsm27dbx" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_11.png" id="93_1wxnj"]
+[ext_resource type="Texture2D" uid="uid://b8akvfmkqhcfi" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_12.png" id="94_q7mdu"]
+[ext_resource type="Texture2D" uid="uid://cjsc23twdqrhf" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_13.png" id="95_nmsf7"]
+[ext_resource type="Texture2D" uid="uid://cvm130e4e5hn6" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_14.png" id="96_h74nx"]
+[ext_resource type="Texture2D" uid="uid://cf764f8ei1hy6" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_15.png" id="97_ir658"]
+[ext_resource type="Texture2D" uid="uid://ctq5qv2byyc1j" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_16.png" id="98_7q1ia"]
+[ext_resource type="Texture2D" uid="uid://bgwfegb17jakp" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_17.png" id="99_8rv5f"]
+[ext_resource type="Texture2D" uid="uid://dhcdq0v5daabi" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_18.png" id="100_cetam"]
+[ext_resource type="Texture2D" uid="uid://bmug58wtek2nt" path="res://lewds/lewd_assets/rachel_ls/clothes_2/clothes_2_19.png" id="101_c8mvu"]
+[ext_resource type="Texture2D" uid="uid://dlv5dowi5ra2i" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_01.png" id="102_4obrs"]
+[ext_resource type="Texture2D" uid="uid://cc87w3ycigu78" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_02.png" id="103_ycd8e"]
+[ext_resource type="Texture2D" uid="uid://d2o71kj4sqhc4" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_03.png" id="104_twe5d"]
+[ext_resource type="Texture2D" uid="uid://0cad7pmevwhq" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_04.png" id="105_wrsyk"]
+[ext_resource type="Texture2D" uid="uid://crla4o7vy65bm" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_05.png" id="106_g4aiy"]
+[ext_resource type="Texture2D" uid="uid://bg3c2m01jhdob" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_06.png" id="107_xucss"]
+[ext_resource type="Texture2D" uid="uid://sn5df1tbde6v" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_07.png" id="108_lmf3t"]
+[ext_resource type="Texture2D" uid="uid://bjnpty80b2tal" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_08.png" id="109_pbvb8"]
+[ext_resource type="Texture2D" uid="uid://mhg5i7iskcpq" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_09.png" id="110_defbi"]
+[ext_resource type="Texture2D" uid="uid://cqplc8n1hvh83" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_10.png" id="111_b0852"]
+[ext_resource type="Texture2D" uid="uid://c35slrn6dmpv4" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_11.png" id="112_0dpe5"]
+[ext_resource type="Texture2D" uid="uid://dwiymo8uafghd" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_12.png" id="113_0wow5"]
+[ext_resource type="Texture2D" uid="uid://dh4305a0y41or" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_13.png" id="114_1m8pa"]
+[ext_resource type="Texture2D" uid="uid://bawx26q1goa3d" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_14.png" id="115_gdux4"]
+[ext_resource type="Texture2D" uid="uid://b56ha120n87dh" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_15.png" id="116_m5nlr"]
+[ext_resource type="Texture2D" uid="uid://cpdn1mo61lll2" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_16.png" id="117_6sx2b"]
+[ext_resource type="Texture2D" uid="uid://cqh41bwxkbyms" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_17.png" id="118_b2jvl"]
+[ext_resource type="Texture2D" uid="uid://bj1gh7emn82jg" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_18.png" id="119_pysey"]
+[ext_resource type="Texture2D" uid="uid://cyiepbwatbfp1" path="res://lewds/lewd_assets/rachel_ls/bangs/bangs_19.png" id="120_ymdqg"]
+[ext_resource type="Texture2D" uid="uid://c1qkqrkb80pdy" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_01.png" id="121_ahe7a"]
+[ext_resource type="Texture2D" uid="uid://cpef2k0ehb0tu" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_02.png" id="122_2cr7l"]
+[ext_resource type="Texture2D" uid="uid://cb8htfxy6sw3j" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_03.png" id="123_ot6pm"]
+[ext_resource type="Texture2D" uid="uid://gefw3rlq0y4l" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_04.png" id="124_25eup"]
+[ext_resource type="Texture2D" uid="uid://cioudk8j4yly5" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_05.png" id="125_ox4lk"]
+[ext_resource type="Texture2D" uid="uid://b1hc4s8dtnrq6" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_06.png" id="126_r7xo3"]
+[ext_resource type="Texture2D" uid="uid://78fwwfwmf8e2" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_07.png" id="127_mn3fw"]
+[ext_resource type="Texture2D" uid="uid://coytspufqictg" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_08.png" id="128_a1ogf"]
+[ext_resource type="Texture2D" uid="uid://bjpu1p13l0ac2" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_09.png" id="129_1em45"]
+[ext_resource type="Texture2D" uid="uid://cnbv6t8qei2km" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_10.png" id="130_t7rl6"]
+[ext_resource type="Texture2D" uid="uid://clitf5mlpdt3e" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_11.png" id="131_bavdr"]
+[ext_resource type="Texture2D" uid="uid://cejrlxtko1xtp" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_12.png" id="132_mqwns"]
+[ext_resource type="Texture2D" uid="uid://cm1o66a2krblm" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_13.png" id="133_xkor4"]
+[ext_resource type="Texture2D" uid="uid://bppq8glonffyt" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_14.png" id="134_p08aw"]
+[ext_resource type="Texture2D" uid="uid://b8m2atf65xa3y" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_15.png" id="135_g0w17"]
+[ext_resource type="Texture2D" uid="uid://bgwduklbflyqv" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_16.png" id="136_n181h"]
+[ext_resource type="Texture2D" uid="uid://cm0vb5amhu7q1" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_17.png" id="137_ol5oy"]
+[ext_resource type="Texture2D" uid="uid://btqmhj2rfvrho" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_18.png" id="138_7d5uw"]
+[ext_resource type="Texture2D" uid="uid://c76iymshpa6h" path="res://lewds/lewd_assets/rachel_ls/back_hair/back_hair_19.png" id="139_blked"]
+[ext_resource type="Texture2D" uid="uid://bujoak1jph1sa" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_01.png" id="140_bwirc"]
+[ext_resource type="Texture2D" uid="uid://dhp8pb8jmr0mh" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_02.png" id="141_gc4qf"]
+[ext_resource type="Texture2D" uid="uid://bheo33c03mm1g" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_03.png" id="142_xnr02"]
+[ext_resource type="Texture2D" uid="uid://cmsfxouxwpxn3" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_04.png" id="143_ors4b"]
+[ext_resource type="Texture2D" uid="uid://cteagp5mhwoa2" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_05.png" id="144_d0ynq"]
+[ext_resource type="Texture2D" uid="uid://b1ph6hyosecg2" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_06.png" id="145_87sin"]
+[ext_resource type="Texture2D" uid="uid://dupy3halt775f" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_07.png" id="146_ao7dk"]
+[ext_resource type="Texture2D" uid="uid://6o6whwhnct5m" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_08.png" id="147_1r73d"]
+[ext_resource type="Texture2D" uid="uid://cow8pq56yeyga" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_09.png" id="148_d6g0s"]
+[ext_resource type="Texture2D" uid="uid://co5ct00g72daw" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_10.png" id="149_7dstv"]
+[ext_resource type="Texture2D" uid="uid://cwa07dnkwelpt" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_11.png" id="150_nlbvt"]
+[ext_resource type="Texture2D" uid="uid://dn7nfk0qx22j7" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_12.png" id="151_p1wu1"]
+[ext_resource type="Texture2D" uid="uid://drkxwok10jw5k" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_13.png" id="152_6ie2t"]
+[ext_resource type="Texture2D" uid="uid://cewj0aisbuc72" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_14.png" id="153_gbvp5"]
+[ext_resource type="Texture2D" uid="uid://bvs7cv0pkcyb1" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_15.png" id="154_s2p6t"]
+[ext_resource type="Texture2D" uid="uid://crb41ga7ifuuw" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_16.png" id="155_cl4dp"]
+[ext_resource type="Texture2D" uid="uid://dnw4as88ltxs4" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_17.png" id="156_yo0xm"]
+[ext_resource type="Texture2D" uid="uid://clxnj7etsjvxf" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_18.png" id="157_0jb7w"]
+[ext_resource type="Texture2D" uid="uid://qwwhlf6g6qse" path="res://lewds/lewd_assets/rachel_ls/r_vagina/r_vagina_19.png" id="158_0ju41"]
+[ext_resource type="Texture2D" uid="uid://crcu4d6jfwhlt" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_01.png" id="159_11j7h"]
+[ext_resource type="Texture2D" uid="uid://culpwcd0hem3y" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_02.png" id="160_5qbrm"]
+[ext_resource type="Texture2D" uid="uid://cwi1da1i5w6ak" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_03.png" id="161_evy3d"]
+[ext_resource type="Texture2D" uid="uid://biyqjb0elgq61" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_04.png" id="162_m7mf4"]
+[ext_resource type="Texture2D" uid="uid://c3ihwevl1dgrr" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_05.png" id="163_r4nd2"]
+[ext_resource type="Texture2D" uid="uid://c4hdoavodmujr" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_06.png" id="164_xviwi"]
+[ext_resource type="Texture2D" uid="uid://shvmyisxdfb4" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_07.png" id="165_m58c7"]
+[ext_resource type="Texture2D" uid="uid://gbqyg3tewfcf" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_08.png" id="166_vvftp"]
+[ext_resource type="Texture2D" uid="uid://chktq0vhk0cet" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_09.png" id="167_7kdre"]
+[ext_resource type="Texture2D" uid="uid://dgod0oeo21min" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_10.png" id="168_4x2tj"]
+[ext_resource type="Texture2D" uid="uid://b2j28j85gq4g6" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_11.png" id="169_huy8t"]
+[ext_resource type="Texture2D" uid="uid://dpe3n33q8erhp" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_12.png" id="170_2sd5k"]
+[ext_resource type="Texture2D" uid="uid://dr0p1ey10qotu" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_13.png" id="171_6jomi"]
+[ext_resource type="Texture2D" uid="uid://ddml13eo2a5kh" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_14.png" id="172_71b4w"]
+[ext_resource type="Texture2D" uid="uid://bvdmygu43us3f" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_15.png" id="173_q1xhc"]
+[ext_resource type="Texture2D" uid="uid://dqac0rfoaavq8" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_16.png" id="174_yf37x"]
+[ext_resource type="Texture2D" uid="uid://c4ss03jqnlesf" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_17.png" id="175_412o5"]
+[ext_resource type="Texture2D" uid="uid://gii31dkgpg04" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_18.png" id="176_dc34m"]
+[ext_resource type="Texture2D" uid="uid://bynkfkawu3ito" path="res://lewds/lewd_assets/rachel_ls/l_vagina/l_vagina_19.png" id="177_p1i2w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ycd8e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ey3wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_q7e01")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_ycd8e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/Boobs:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("11_8b2ba")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Head/RSidehair:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("16_cmmlg")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Head/LSidehair:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("19_n3oe8")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Clothes2:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("23_ey3wb")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Head/Bangs:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("21_ycf3n")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/BackHair:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_x1vu7")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/RVagina:texture")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("24_j13b7")]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/LVagina:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_mtn7i")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(659, 459)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/Head:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/BackHair:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/RThigh:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0766427]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/RThigh:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-344, 214)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/LThigh:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-439, 5)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/LThigh:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.142049]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/RShoulder:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.113522]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("MBody:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(144, 326)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("MBody:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/Penis:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-636, -21)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/Penis:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/Head/Eyebrows:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-5, -158)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Head/Googles:scale")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Torso/Head/LEar:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Torso/Head/Mouth:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4obrs"]
+resource_name = "lewdscene"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso/Boobs:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_8b2ba"), ExtResource("26_qn8p7"), ExtResource("27_ru44a"), ExtResource("28_7flnp"), ExtResource("29_cpg6b"), ExtResource("30_hid3i"), ExtResource("31_s6llt"), ExtResource("32_cjgk7"), ExtResource("33_nq0bq"), ExtResource("34_lu2e3"), ExtResource("35_cv5wy"), ExtResource("36_bttvf"), ExtResource("37_v3lej"), ExtResource("38_hqtwl"), ExtResource("39_lydtu"), ExtResource("40_aak2k"), ExtResource("41_pmgnj"), ExtResource("42_w68wn"), ExtResource("43_076m6"), ExtResource("44_hpvep")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso/Head/RSidehair:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("16_cmmlg"), ExtResource("45_geu8c"), ExtResource("46_nkocx"), ExtResource("47_vlod4"), ExtResource("48_5j1w1"), ExtResource("49_6sjti"), ExtResource("50_dxlay"), ExtResource("51_egtmm"), ExtResource("52_sgxge"), ExtResource("53_c56dc"), ExtResource("54_inp1r"), ExtResource("55_d5rd7"), ExtResource("56_48ex1"), ExtResource("57_j5jef"), ExtResource("58_7xo0f"), ExtResource("59_3ipou"), ExtResource("60_o2hdh"), ExtResource("61_lva81"), ExtResource("62_lcbbe"), ExtResource("63_meycu")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Head/LSidehair:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("19_n3oe8"), ExtResource("64_tmmtg"), ExtResource("65_mjndd"), ExtResource("66_11415"), ExtResource("67_uxgfc"), ExtResource("68_tamup"), ExtResource("69_3a17f"), ExtResource("70_o4n5j"), ExtResource("71_8m1iu"), ExtResource("72_7a3nj"), ExtResource("73_758wf"), ExtResource("74_6jkg4"), ExtResource("75_ii5fl"), ExtResource("76_4756g"), ExtResource("77_sbn6g"), ExtResource("78_nw12g"), ExtResource("79_brp3o"), ExtResource("80_73ern"), ExtResource("81_buiry"), ExtResource("82_sivop")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Clothes2:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("23_ey3wb"), ExtResource("83_ep4ud"), ExtResource("84_xt0ck"), ExtResource("85_87h80"), ExtResource("86_jw8rn"), ExtResource("87_j8ci0"), ExtResource("88_dpm1k"), ExtResource("89_mjg2d"), ExtResource("90_uin3q"), ExtResource("91_2d8ch"), ExtResource("92_sdh3e"), ExtResource("93_1wxnj"), ExtResource("94_q7mdu"), ExtResource("95_nmsf7"), ExtResource("96_h74nx"), ExtResource("97_ir658"), ExtResource("98_7q1ia"), ExtResource("99_8rv5f"), ExtResource("100_cetam"), ExtResource("101_c8mvu")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Head/Bangs:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("21_ycf3n"), ExtResource("102_4obrs"), ExtResource("103_ycd8e"), ExtResource("104_twe5d"), ExtResource("105_wrsyk"), ExtResource("106_g4aiy"), ExtResource("107_xucss"), ExtResource("108_lmf3t"), ExtResource("109_pbvb8"), ExtResource("110_defbi"), ExtResource("111_b0852"), ExtResource("112_0dpe5"), ExtResource("113_0wow5"), ExtResource("114_1m8pa"), ExtResource("115_gdux4"), ExtResource("116_m5nlr"), ExtResource("117_6sx2b"), ExtResource("118_b2jvl"), ExtResource("119_pysey"), ExtResource("120_ymdqg")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/BackHair:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_x1vu7"), ExtResource("121_ahe7a"), ExtResource("122_2cr7l"), ExtResource("123_ot6pm"), ExtResource("124_25eup"), ExtResource("125_ox4lk"), ExtResource("126_r7xo3"), ExtResource("127_mn3fw"), ExtResource("128_a1ogf"), ExtResource("129_1em45"), ExtResource("130_t7rl6"), ExtResource("131_bavdr"), ExtResource("132_mqwns"), ExtResource("133_xkor4"), ExtResource("134_p08aw"), ExtResource("135_g0w17"), ExtResource("136_n181h"), ExtResource("137_ol5oy"), ExtResource("138_7d5uw"), ExtResource("139_blked")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/RVagina:texture")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("24_j13b7"), ExtResource("140_bwirc"), ExtResource("141_gc4qf"), ExtResource("142_xnr02"), ExtResource("143_ors4b"), ExtResource("144_d0ynq"), ExtResource("145_87sin"), ExtResource("146_ao7dk"), ExtResource("147_1r73d"), ExtResource("148_d6g0s"), ExtResource("149_7dstv"), ExtResource("150_nlbvt"), ExtResource("151_p1wu1"), ExtResource("152_6ie2t"), ExtResource("153_gbvp5"), ExtResource("154_s2p6t"), ExtResource("155_cl4dp"), ExtResource("156_yo0xm"), ExtResource("157_0jb7w"), ExtResource("158_0ju41")]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/LVagina:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("8_mtn7i"), ExtResource("159_11j7h"), ExtResource("160_5qbrm"), ExtResource("161_evy3d"), ExtResource("162_m7mf4"), ExtResource("163_r4nd2"), ExtResource("164_xviwi"), ExtResource("165_m58c7"), ExtResource("166_vvftp"), ExtResource("167_7kdre"), ExtResource("168_4x2tj"), ExtResource("169_huy8t"), ExtResource("170_2sd5k"), ExtResource("171_6jomi"), ExtResource("172_71b4w"), ExtResource("173_q1xhc"), ExtResource("174_yf37x"), ExtResource("175_412o5"), ExtResource("176_dc34m"), ExtResource("177_p1i2w")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(659, 459), Vector2(694, 422)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/Head:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.16954]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/BackHair:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.156858]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/RThigh:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0766427, -0.0198747]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/RThigh:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-344, 214), Vector2(-360, 228)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/LThigh:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-439, 5), Vector2(-445, 9.53674e-07)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Torso/LThigh:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0.15, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.142049, 0.0507931]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Torso/RShoulder:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.113522, 0.0475661]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("MBody:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(144, 326), Vector2(343, 357)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("MBody:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.120684]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Torso/Penis:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-636, -21), Vector2(-507, 65)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Torso/Penis:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.204944]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Torso/Head/Eyebrows:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -158), Vector2(-5.45015, -181.522)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Torso/Head/Googles:scale")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.953823, 1)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Torso/Head/LEar:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.45, 0.55),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.44462, 0.158983, -0.44462]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Torso/Head/Mouth:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.632654)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_twe5d"]
+_data = {
+&"RESET": SubResource("Animation_ycd8e"),
+&"lewdscene": SubResource("Animation_4obrs")
+}
+
+[node name="rachel_ls" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Layer35" type="Sprite2D" parent="Node2D"]
+position = Vector2(641, 368)
+texture = ExtResource("1_8b2ba")
+
+[node name="Torso" type="Sprite2D" parent="Node2D"]
+position = Vector2(659, 459)
+texture = ExtResource("2_cmmlg")
+
+[node name="BackHair" type="Sprite2D" parent="Node2D/Torso"]
+show_behind_parent = true
+position = Vector2(414, -171)
+texture = ExtResource("3_x1vu7")
+offset = Vector2(81, 66)
+
+[node name="Clothes" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(30, 114)
+texture = ExtResource("14_pv466")
+
+[node name="RShoulder" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(479, -13)
+rotation = -0.113522
+texture = ExtResource("25_66lyp")
+offset = Vector2(2, 127)
+
+[node name="LThigh" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-439, 5)
+rotation = -0.142049
+texture = ExtResource("20_18qlf")
+offset = Vector2(27, -113)
+
+[node name="VaginaHole" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-438, 142)
+texture = ExtResource("28_fjfp3")
+
+[node name="LVagina" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-394, 112)
+texture = ExtResource("8_mtn7i")
+
+[node name="Penis" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-636, -21)
+texture = ExtResource("23_3cue8")
+offset = Vector2(253, 59)
+
+[node name="RThigh" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-344, 214)
+rotation = 0.0766427
+texture = ExtResource("26_h1g4p")
+offset = Vector2(204, -79)
+
+[node name="Boobs" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(225, -61)
+texture = ExtResource("11_8b2ba")
+
+[node name="Head" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(413, -171)
+texture = ExtResource("3_n3oe8")
+offset = Vector2(-11, -133)
+
+[node name="Bows" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(49, -272)
+texture = ExtResource("13_8ik2m")
+
+[node name="LEar" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(-106, -270)
+texture = ExtResource("19_3b37o")
+offset = Vector2(-16, -20)
+
+[node name="REar" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(171, -217)
+rotation = -0.0140065
+texture = ExtResource("24_6oui0")
+offset = Vector2(18, -18)
+
+[node name="RSidehair" type="Sprite2D" parent="Node2D/Torso/Head"]
+show_behind_parent = true
+position = Vector2(20, 65)
+texture = ExtResource("16_cmmlg")
+
+[node name="Eyes" type="AnimatedSprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(-16, -103)
+sprite_frames = SubResource("SpriteFrames_ycd8e")
+autoplay = "default"
+frame_progress = 0.368101
+
+[node name="Mouth" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(-30, -12)
+texture = ExtResource("6_j13b7")
+
+[node name="LSidehair" type="Sprite2D" parent="Node2D/Torso/Head"]
+show_behind_parent = true
+position = Vector2(-149, 19)
+texture = ExtResource("19_n3oe8")
+
+[node name="Eyebrows" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(-5, -158)
+texture = ExtResource("17_iegjl")
+
+[node name="Bangs" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(5, -123)
+texture = ExtResource("21_ycf3n")
+
+[node name="Googles" type="Sprite2D" parent="Node2D/Torso/Head"]
+position = Vector2(25, -236)
+texture = ExtResource("18_owcbj")
+
+[node name="Clothes2" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(93, 50)
+texture = ExtResource("23_ey3wb")
+
+[node name="RVagina" type="Sprite2D" parent="Node2D/Torso"]
+position = Vector2(-369, 154)
+texture = ExtResource("24_j13b7")
+
+[node name="MBody" type="Sprite2D" parent="Node2D"]
+position = Vector2(144, 326)
+texture = ExtResource("22_578t6")
+
+[node name="anim" type="AnimationPlayer" parent="Node2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_twe5d")
+}
+autoplay = "lewdscene"
+speed_scale = 1.2
+
+[node name="Template" type="Sprite2D" parent="Node2D"]
+visible = false
+self_modulate = Color(0.423529, 0.803922, 0.396078, 0.458824)
+position = Vector2(642, 364)
+texture = ExtResource("11_hky53")
