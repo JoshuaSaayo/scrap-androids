@@ -75,7 +75,6 @@ texture = ExtResource("2_ae0lw")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("4_ae0lw")
 
 [node name="FullImageBlur" type="TextureRect" parent="."]
 layout_mode = 0

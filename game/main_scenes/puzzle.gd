@@ -15,6 +15,7 @@ const ANIMATION_SCENE := "res://lewds/lewdscenes/rachel_ls.tscn"
 
 var tiles: Array = []
 var puzzle_state: Array = []
+var is_animating := false
 
 
 func _ready():
@@ -73,16 +74,56 @@ func _update_grid():
 
 
 func _on_tile_pressed(tile_id: int) -> void:
+	if is_animating:
+		return
+	
 	var pos := puzzle_state.find(tile_id)
 	var empty_pos := puzzle_state.find(EMPTY_TILE)
 
 	if pos != -1 and _is_adjacent(pos, empty_pos):
+		is_animating = true
+		
+		# Get the actual button node that was pressed
+		var pressed_button: Button = tiles[tile_id]
+		
+		# Calculate movement direction and distance
+		var from_pos := Vector2(pos % GRID_SIZE, pos / GRID_SIZE)
+		var to_pos := Vector2(empty_pos % GRID_SIZE, empty_pos / GRID_SIZE)
+		var direction := to_pos - from_pos
+		
+		# Swap positions in the puzzle state
 		puzzle_state[empty_pos] = puzzle_state[pos]
 		puzzle_state[pos] = EMPTY_TILE
-		_update_grid()
+		
+		# Animate the tile movement
+		_animate_tile_move(pressed_button, direction, pos, empty_pos)
 
+
+func _animate_tile_move(tile: Button, direction: Vector2, from_index: int, to_index: int) -> void:
+	# Calculate the movement distance in pixels
+	var move_distance := Vector2(direction.x * TILE_SIZE, direction.y * TILE_SIZE)
+	
+	# Create the tween for smooth movement
+	var tween := create_tween()
+	tween.set_trans(Tween.TRANS_SINE)
+	tween.set_ease(Tween.EASE_IN_OUT)
+	
+	# Store initial position
+	var initial_position := tile.position
+	
+	# Animate the movement
+	tween.tween_property(tile, "position", initial_position + move_distance, 0.3)
+	
+	# Update the grid after animation completes
+	tween.finished.connect(func():
+		_update_grid()
+		# Reset tile position to avoid cumulative positioning issues
+		tile.position = initial_position
+		is_animating = false
+		
 		if _is_solved():
 			_on_puzzle_solved()
+	)
 
 
 func _is_adjacent(a: int, b: int) -> bool:
@@ -173,6 +214,9 @@ func _finish_sweep():
 
 
 func _on_solve_button_pressed() -> void:
+	if is_animating:
+		return
+		
 	puzzle_state.clear()
 	
 	for i in range(GRID_SIZE * GRID_SIZE - 1):
