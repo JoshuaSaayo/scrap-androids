@@ -1,7 +1,7 @@
 extends Control
 
 const GRID_SIZE := 2
-const TILE_SIZE := 170
+const TILE_SIZE := 342
 const EMPTY_TILE := -3
 const TILE_PATH := "res://assets/puzzle_assets/puzzle_tiles_1/tile_%d.jpg"
 const SHUFFLE_MOVES := 40
@@ -9,7 +9,6 @@ const ANIMATION_SCENE := "res://lewds/lewdscenes/rachel_ls.tscn"
 
 @onready var grid: GridContainer = $Grid
 @onready var full_image_blur: TextureRect = $FullImageBlur
-@onready var message: Label = $Message
 @onready var sweep_rect: TextureRect = $SweepRect
 @onready var sparkles: GPUParticles2D = $BackgroundSparkles
 @onready var sweep_trail: GPUParticles2D = $SweepTrails
@@ -122,7 +121,6 @@ func _on_puzzle_solved():
 	# Fade out grid
 	var tween := create_tween()
 	tween.tween_property(grid, "modulate:a", 0.0, 0.6)
-	tween.tween_property(message, "modulate:a", 1.0, 0.6) # Show message
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_OUT)
 	
@@ -168,7 +166,6 @@ func _finish_sweep():
 	# Smooth fade out blur and message
 	var fade_tween := create_tween()
 	fade_tween.tween_property(full_image_blur, "modulate:a", 0.0, 0.6)
-	fade_tween.tween_property(message, "modulate:a", 0.0, 0.6)
 	fade_tween.set_trans(Tween.TRANS_SINE)
 	fade_tween.set_ease(Tween.EASE_OUT)
 
