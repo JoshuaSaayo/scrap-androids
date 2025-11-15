@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://cv3lq5t4igbwx"]
+[gd_scene load_steps=16 format=3 uid="uid://cv3lq5t4igbwx"]
 
 [ext_resource type="Script" uid="uid://dyq64lmdoyqy1" path="res://main_scenes/puzzle.gd" id="1_751xq"]
-[ext_resource type="Texture2D" uid="uid://beqis8diuymfp" path="res://assets/puzzle_assets/puzzle_tiles_1/full_image.png" id="2_ae0lw"]
+[ext_resource type="PackedScene" uid="uid://bx6cph6pbulyg" path="res://lewds/lewdscenes/rachel_ls.tscn" id="3_cyduf"]
 [ext_resource type="Texture2D" uid="uid://bl8lj7j580lye" path="res://assets/puzzle_assets/puzzle_tiles_1/Rachel_LS_blurred.png" id="3_v5n6s"]
 [ext_resource type="Texture2D" uid="uid://bhuililqa803s" path="res://UI/assets/spark.png" id="4_ae0lw"]
-[ext_resource type="FontFile" uid="uid://dkm2355qngj5i" path="res://UI/Fonts/Texturina-VariableFont_opsz,wght.ttf" id="4_esv5j"]
 
 [sub_resource type="Gradient" id="Gradient_cyduf"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
@@ -50,11 +49,19 @@ gravity = Vector3(0, 0, 0)
 scale_max = 3.0
 color_ramp = SubResource("GradientTexture1D_ae0lw")
 
-[sub_resource type="LabelSettings" id="LabelSettings_ae0lw"]
-font = ExtResource("4_esv5j")
-font_size = 30
-outline_size = 2
-outline_color = Color(0, 0, 0, 1)
+[sub_resource type="Gradient" id="Gradient_ae0lw"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cyduf"]
+gradient = SubResource("Gradient_ae0lw")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_p2n2h"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(342, 342, 1)
+direction = Vector3(0, -1, 0)
+gravity = Vector3(0, 98, 0)
+scale_min = 0.3
+color_ramp = SubResource("GradientTexture1D_cyduf")
 
 [node name="Puzzle" type="Control"]
 layout_mode = 3
@@ -65,16 +72,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_751xq")
 
-[node name="FullImage" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1281.0
-offset_bottom = 721.0
-texture = ExtResource("2_ae0lw")
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="SweepRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="rachel_ls" parent="." instance=ExtResource("3_cyduf")]
 
 [node name="FullImageBlur" type="TextureRect" parent="."]
 layout_mode = 0
@@ -113,6 +124,13 @@ grow_horizontal = 2
 grow_vertical = 2
 columns = 2
 
+[node name="SlideSparks" type="GPUParticles2D" parent="."]
+position = Vector2(641, 363)
+amount = 10
+texture = ExtResource("4_ae0lw")
+lifetime = 0.3
+process_material = SubResource("ParticleProcessMaterial_p2n2h")
+
 [node name="SolveButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 997.0
@@ -120,22 +138,5 @@ offset_top = 18.0
 offset_right = 1099.0
 offset_bottom = 49.0
 text = "Solve Puzzle"
-
-[node name="Message" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -254.0
-offset_top = 50.0
-offset_right = 254.0
-offset_bottom = 147.0
-grow_horizontal = 2
-text = "Solve the Puzzle to unlock the lustful 
-desires in this mysterious world."
-label_settings = SubResource("LabelSettings_ae0lw")
-horizontal_alignment = 1
-
-[node name="Timer" type="Timer" parent="."]
 
 [connection signal="pressed" from="SolveButton" to="." method="_on_solve_button_pressed"]

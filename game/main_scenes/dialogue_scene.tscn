@@ -10,16 +10,17 @@
 [ext_resource type="FontFile" uid="uid://dkm2355qngj5i" path="res://UI/Fonts/Texturina-VariableFont_opsz,wght.ttf" id="8_jjc2r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwqrh"]
-bg_color = Color(0.847059, 0.368627, 0.164706, 0.196078)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.706688, 0.298395, 6.73831e-07, 1)
+bg_color = Color(0.569028, 0.227176, 0.0760966, 0.392157)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.773523, 0.667026, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
+shadow_size = 2
 
 [sub_resource type="LabelSettings" id="LabelSettings_8rnwa"]
 font = ExtResource("7_nwqrh")
